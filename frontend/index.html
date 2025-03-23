@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diet Recommendation Chatbox</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>Personalized Diet Recommendation</h1>
+  <form id="user-form">
+    <h3>Basic Information</h3>
+    <label>Gender:
+      <select id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </label>
+
+    <label>Weight (kg):
+      <input type="number" id="weight_kg" required />
+    </label>
+
+    <label>Height (cm):
+      <input type="number" id="height_cm" required />
+    </label>
+
+    <label>Age:
+      <input type="number" id="age" required />
+    </label>
+
+    <label>Activity Level:
+      <select id="activity_level">
+        <option value="sedentary">Sedentary</option>
+        <option value="light">Light</option>
+        <option value="moderate">Moderate</option>
+        <option value="active">Active</option>
+        <option value="very active">Very Active</option>
+      </select>
+    </label>
+
+    <label>Goal:
+      <select id="goal">
+        <option value="maintain">Maintain Weight</option>
+        <option value="weight loss">Weight Loss</option>
+        <option value="weight gain">Weight Gain</option>
+      </select>
+    </label>
+
+    <h3>Additional Preferences</h3>
+    <textarea id="chatbox" placeholder="Enter any dietary preferences, allergies, or meal habits..."></textarea>
+
+    <button type="submit">Get Recommendation</button>
+  </form>
+
+  <div id="response">
+    <h2>Results</h2>
+    <div id="nutrition-data"></div>
+    <div id="preferences"></div>
+    <div id="meal-plan"></div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.5/purify.min.js"></script>
+    <script src="script.js"></script>   
+</body>
+
+</html>

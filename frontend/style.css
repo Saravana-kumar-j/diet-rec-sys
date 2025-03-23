@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc;
+    margin: 40px;
+  }
+  
+  h1 {
+    color: #2c3e50;
+  }
+  
+  form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input, select, textarea, button {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  textarea {
+    height: 120px;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  #response {
+    margin-top: 40px;
+  }
+  
+  h2 {
+    color: #27ae60;
+  }
+  
+  .meal-plan-content {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+  }
+  
+  .meal-plan-content h4 {
+    color: #2c3e50;
+    margin-top: 1.5rem;
+  }
+  
+  .meal-plan-content ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+    margin: 1rem 0;
+  }
+  
+  .meal-plan-content strong {
+    color: #27ae60;
+  }
+  
+  .meal-plan-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+  }
+  
+  .meal-plan-content td, .meal-plan-content th {
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .meal-plan-content th {
+    background-color: #3498db;
+    color: white;
+  }
