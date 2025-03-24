@@ -20,6 +20,10 @@ patterns = [
         "label": "ALLERGY",
         "pattern": [{"LOWER": {"REGEX": "shellfish"}}]
     },
+    {
+        "label": "ALLERGY",
+        "pattern": [{"LOWER": {"REGEX": "coconut"}}]
+    },
     
     # Enhanced Meal Frequency Patterns
     {
