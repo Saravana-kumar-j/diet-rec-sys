@@ -1,0 +1,124 @@
+[
+    // Diet Patterns
+    
+    {
+        "label": "DIET",
+        "pattern": [{"LOWER": {"REGEX": "lacto[- ]?vegetarian"}}]
+    },
+    {
+        "label": "DIET",
+        "pattern": [{"LOWER": {"REGEX": "vegan"}}]
+    },
+    {
+        "label": "DIET",
+        "pattern": [{"LOWER": {"REGEX": "pescatarian"}}]
+    },
+    {
+        "label": "DIET",
+        "pattern": [{"LOWER": {"REGEX": "flexitarian"}}]
+    },
+    {
+        "label": "DIET",
+        "pattern": [{"LOWER": {"REGEX": "keto(genic)?"}}]
+    },
+    {
+        "label": "DIET",
+        "pattern": [{"LOWER": {"REGEX": "paleo"}}]
+    },
+    {
+        "label": "DIET",
+        "pattern": [{"LOWER": {"REGEX": "low[- ]?carb"}}]
+    },
+    {
+        "label": "DIET",
+        "pattern": [{"LOWER": {"REGEX": "high[- ]?protein"}}]
+    },
+
+    // Allergies Patterns
+    {
+        "label": "ALLERGY",
+        "pattern": [{"LOWER": {"REGEX": "gluten"}}]
+    },
+    {
+        "label": "ALLERGY",
+        "pattern": [{"LOWER": {"REGEX": "dairy"}}]
+    },
+    {
+        "label": "ALLERGY",
+        "pattern": [{"LOWER": {"REGEX": "soy"}}]
+    },
+    {
+        "label": "ALLERGY",
+        "pattern": [{"LOWER": {"REGEX": "egg(s)?"}}]
+    },
+    {
+        "label": "ALLERGY",
+        "pattern": [{"LOWER": {"REGEX": "tree[- ]?nuts"}}]
+    },
+    {
+        "label": "ALLERGY",
+        "pattern": [{"LOWER": {"REGEX": "fish"}}]
+    },
+    {
+        "label": "ALLERGY",
+        "pattern": [{"LOWER": {"REGEX": "sesame"}}]
+    },
+    {
+        "label": "ALLERGY",
+        "pattern": [{"LOWER": {"REGEX": "mustard"}}]
+    },
+
+    // Meal Frequency Patterns
+    {
+        "label": "MEAL_FREQ",
+        "pattern": [
+            {"LIKE_NUM": True},
+            {"LOWER": {"REGEX": "meal(s)?"}},
+            {"LOWER": {"IN": ["and", "+"]}, "OP": "?"},
+            {"LIKE_NUM": True},
+            {"LOWER": {"REGEX": "snack(s)?"}, "OP": "?"}
+        ]
+    },
+    {
+        "label": "MEAL_FREQ",
+        "pattern": [
+            {"LIKE_NUM": True},
+            {"LOWER": {"REGEX": "snack(s)?"}}
+        ]
+    },
+    {
+        "label": "MEAL_FREQ",
+        "pattern": [
+            {"LOWER": {"REGEX": "intermittent"}},
+            {"LOWER": {"REGEX": "fasting"}}
+        ]
+    },
+    {
+        "label": "MEAL_FREQ",
+        "pattern": [
+            {"LOWER": {"REGEX": "three[- ]?meals"}}
+        ]
+    },
+
+    // Other Patterns (e.g., Preferences)
+    {
+        "label": "PREFERENCE",
+        "pattern": [{"LOWER": {"REGEX": "organic"}}]
+    },
+    {
+        "label": "PREFERENCE",
+        "pattern": [{"LOWER": {"REGEX": "non[- ]?gmo"}}]
+    },
+    {
+        "label": "PREFERENCE",
+        "pattern": [{"LOWER": {"REGEX": "low[- ]?sodium"}}]
+    },
+    {
+        "label": "PREFERENCE",
+        "pattern": [{"LOWER": {"REGEX": "sugar[- ]?free"}}]
+    },
+    {
+        "label": "PREFERENCE",
+        "pattern": [{"LOWER": {"REGEX": "high[- ]?fiber"}}]
+    }
+]

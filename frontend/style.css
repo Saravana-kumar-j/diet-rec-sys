@@ -115,27 +115,59 @@ h2 {
 
 .result-container{
   display:flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
   gap: 10px;
 }
 .result-container div{
+  height: 15rem;
+  width: 15rem;
+  max-width: 20rem;
   padding: 15px 13px;
   border-radius: 6px;
-  color: #eeeded;
-  font-weight: 500;
+  color: #555;
+  font-weight: 600;
   font-size: 1.05rem;
   backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+
 }
 #meal-plan{
   margin-top: 2rem;
   padding: 15px 13px;
   border-radius: 6px;
-  color: #eeeded;
+  color: #555;
   font-weight: 500;
   font-size: 1.05rem;
   backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#meal-plan h3{
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+#meal-plan p{
+  font-size: 1.2rem;
+}
+
+#meal-plan ul{
+  width: fit-content;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  list-style-type: none;
+  padding-left: 0.8rem;
+  margin: 1rem 0;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
 }
